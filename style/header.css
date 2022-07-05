@@ -1,0 +1,65 @@
+.header_wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #213135;
+  padding: 4rem 0 1.5rem;
+  color: var(--main-color-white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header nav .nav-inner_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header nav .nav-inner_wrap .logo {
+  display: inline-block;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+header nav .nav-inner_wrap .gnb-button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 3.2rem;
+  height: 1.2rem;
+  margin-top: 15px;
+}
+
+header nav .nav-inner_wrap .gnb-button span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.3rem;
+  background: #fff;
+}
+
+header nav .nav-inner_wrap .gnb-button span.a {
+  top: 0;
+}
+
+header nav .nav-inner_wrap .gnb-button span.b {
+  bottom: 0;
+}
+
+header nav .nav-inner_wrap .contact {
+  display: block;
+  float: right;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
