@@ -106,6 +106,6 @@ i {
 }
 
 body {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: var(--font-family);
   color: var(--main-color-black);
 }

@@ -1,0 +1,31 @@
+.section_wrap {
+  background: var(--main-color-white);
+}
+
+.section_wrap .visual {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section_wrap .visual .waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.section_wrap .visual .title {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--main-color-white);
+  font-size: 7rem;
+  font-family: var(--font-family-montserrat);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
