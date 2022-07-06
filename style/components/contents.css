@@ -100,3 +100,62 @@ section.section--approach
   bottom: 50%;
   transform: translateY(50%);
 }
+
+section.section--sectors {
+  position: relative;
+  background: var(--main-color-background);
+  padding: 10rem 0 23rem;
+  margin-bottom: 26rem;
+}
+section.section--sectors .list {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 140rem;
+  left: 50%;
+  bottom: -16rem;
+  transform: translateX(-50%);
+}
+
+section.section--sectors .list li {
+  width: 31%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+section.section--sectors .list li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+section.section--sectors .list li a img {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+section.section--sectors .list li a h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--main-color-white);
+  font-size: 2.5rem;
+  font-family: var(--font-family-montserrat);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+
+section.section--sectors .list li a:hover img,
+section.section--sectors .list li a:focus img {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+section.section--sectors .list li a:hover h3,
+section.section--sectors .list li a:focus h3 {
+  letter-spacing: 4px;
+  transition: all 0.5s;
+}
