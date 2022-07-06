@@ -159,3 +159,29 @@ section.section--sectors .list li a:focus h3 {
   letter-spacing: 4px;
   transition: all 0.5s;
 }
+
+/* section--service */
+
+section.section--service {
+  padding: 10rem 0;
+}
+
+section.section--service .section--service-inner_wrap {
+  overflow: hidden;
+}
+
+section.section--service .section--service-inner_wrap .image_wrap {
+  float: left;
+  width: 48%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+section.section--service .section--service-inner_wrap .image_wrap img {
+  width: 100%;
+}
+
+section.section--service .section--service-inner_wrap .text_wrap {
+  float: right;
+  width: 45%;
+}
