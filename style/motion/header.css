@@ -1,0 +1,15 @@
+.header_wrap.is-active {
+  padding: 2rem 0 1.8rem;
+  transition: all 0.5s;
+}
+
+.header_wrap.is-active .nav--inner_wrap .gnb-button,
+.header_wrap.is-active .nav--inner_wrap .contact {
+  margin-top: 0.4rem;
+  transition: all 0.5s;
+}
+
+.header_wrap.is-active .nav--inner_wrap .logo {
+  font-size: 2.2rem;
+  transition: all 0.5s;
+}

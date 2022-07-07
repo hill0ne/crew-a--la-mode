@@ -1,9 +1,8 @@
-.header_wrap {
+header {
   width: 100%;
-  overflow: hidden;
 }
 
-header {
+.header_wrap {
   position: fixed;
   width: 100%;
   top: 0;
@@ -16,6 +15,7 @@ header {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
 
 header nav .nav-inner_wrap {
@@ -27,6 +27,7 @@ header nav .nav-inner_wrap .logo {
   display: inline-block;
   font-size: 2.5rem;
   letter-spacing: 1px;
+  transition: all 0.5s;
 }
 
 header nav .nav-inner_wrap .gnb-button {
@@ -36,6 +37,7 @@ header nav .nav-inner_wrap .gnb-button {
   width: 3.2rem;
   height: 1.2rem;
   margin-top: 15px;
+  transition: all 0.5s;
 }
 
 header nav .nav-inner_wrap .gnb-button span {
@@ -60,4 +62,5 @@ header nav .nav-inner_wrap .contact {
   float: right;
   margin-top: 1rem;
   font-size: 1.4rem;
+  transition: all 0.5s;
 }

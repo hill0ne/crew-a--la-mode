@@ -97,15 +97,6 @@ section.section--approach
   bottom: 10%;
 }
 
-section.section--approach
-  .section-approach-inner_wrap
-  .textwrap-fixed
-  .text_wrap.is-active {
-  position: fixed;
-  bottom: 50%;
-  transform: translateY(50%);
-}
-
 section.section--sectors {
   position: relative;
   background: var(--main-color-background);

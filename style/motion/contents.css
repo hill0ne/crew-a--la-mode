@@ -1,0 +1,8 @@
+section.section--approach
+  .section-approach-inner_wrap
+  .textwrap-fixed
+  .text_wrap.is-active {
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(50%);
+}
