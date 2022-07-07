@@ -1,0 +1,50 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 20rem;
+  padding: 7.5rem 0;
+  color: var(--main-color-white);
+  background: var(--main-color-navy);
+  z-index: 1;
+}
+
+.footer--inner_wrap {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family-montserrat);
+}
+
+.footer--inner_wrap .footer-logo {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer--inner_wrap .footer-logo address {
+  width: 30%;
+}
+
+.footer--inner_wrap address .address_wrap {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.footer--inner_wrap address .address_wrap span {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.footer--inner_wrap .sns-list {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.footer--inner_wrap .sns-list li {
+  margin: 0 4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
