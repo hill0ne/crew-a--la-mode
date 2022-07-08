@@ -70,6 +70,7 @@ section.section--approach .section-approach-inner_wrap .list li:last-child {
 }
 
 section.section--approach .section-approach-inner_wrap .list li a {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
@@ -79,6 +80,11 @@ section.section--approach .section-approach-inner_wrap .list li a {
 
 section.section--approach .section-approach-inner_wrap .list li a img {
   width: 100%;
+}
+
+section.section--approach .section-approach-inner_wrap .list li a span {
+  display: none;
+  font-family: var(--font-family-montserrat);
 }
 
 section.section--approach .section-approach-inner_wrap .textwrap-fixed {

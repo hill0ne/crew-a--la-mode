@@ -6,3 +6,29 @@ section.section--approach
   bottom: 50%;
   transform: translateY(50%);
 }
+
+section.section--approach .section-approach-inner_wrap .list li a.on:after,
+section.section--approach .section-approach-inner_wrap .list li a:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.3);
+}
+
+section.section--approach .section-approach-inner_wrap .list li a.on span,
+section.section--approach .section-approach-inner_wrap .list li a:hover span {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--main-color-white);
+  font-size: 3.5rem;
+  font-style: italic;
+  z-index: 1;
+}
