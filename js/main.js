@@ -55,7 +55,6 @@ function showImageText() {
       if (scroll > 2050) {
         li[1].firstElementChild.classList.remove("on");
         li[2].firstElementChild.classList.add("on");
-        console.log("li 2번째");
         if (scroll > 2550) {
           li[2].firstElementChild.classList.remove("on");
           li[3].firstElementChild.classList.add("on");

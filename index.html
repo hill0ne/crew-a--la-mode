@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
-    <script src="./js/jquery-3.6.0.js" defer></script>
+    <script src="./js/library/jquery-3.6.0.js" defer></script>
+    <script src="./js/library/jquery.scrolla.min.js" defer></script>
+    <script src="./js/library/splitting.min.js" defer></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/animation.js" defer></script>
     <title>web page</title>
 </head>
 <body>
@@ -32,16 +35,16 @@
                 <video class="waves" autoplay muted loop playsinline>
                     <source src="./assets/img/waves.mp4"/>
                 </video>
-                <h2 class="title">Crew a la mode</h2>
+                <h2 class="title animate" data-animate="motion" data-splitting>Crew a la mode</h2>
             </section>
             <section class="section--about">
                 <div class="section-about-inner_wrap">
-                    <div class="text_wrap">
+                    <div class="text_wrap animate" data-animate="motion" data-splitting>
                         <h2 class="title">about us</h2>
                         <p>The apparel & lifestyle agency. <br>
                             A decade of unrivalled experience. <br>
                             Trusted by the worlds most luxurious yachts.</p>
-                            <a href="#" role="button">explore</a>
+                        <a href="#" role="button">explore</a>
                     </div>
                 </div>
             </section>
@@ -66,51 +69,51 @@
                         </li>
                     </ul>
                     <div class="textwrap-fixed">
-                        <div class="text_wrap">
+                        <div class="text_wrap animate" data-animate="motion" data-splitting>
                             <h2 class="title">about us</h2>
                             <p>Considered essentials, limitless luxury we<br>
                                 establish the balance, approaching your<br>
                                 project in four ways, or a combination of<br>
-                                the following:</p>
-                                <a href="#" role="button">explore</a>
+                                the following</p>
+                            <a href="#" role="button">explore</a>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section--sectors">
                 <div class="section--sectors-inner_wrap">
-                    <div class="text_wrap">
+                    <div class="text_wrap animate" data-animate="motion" data-splitting>
                         <h2 class="title">sectors</h2>
                         <p>Luxury crew apparel curated across oceans,<br>
                             in private residences and at altitude.</p>
                         <a href="" role="button">explore</a>
                     </div>
-                    <ul class="list">
+                    <ul class="list animate" data-animate="motion">
                         <li>
                         <a href="#"><img src="./assets/img/sectors_1.jpg" alt="" />
                             <h3>yachting</h3>
                         </a>
-                    </li>
-                    <li>
+                        </li>
+                        <li>
                         <a href="#"><img src="./assets/img/sectors_2.jpg" alt="" />
                             <h3>aviation</h3>
                         </a>
-                    </li>
-                    <li>
+                        </li>
+                        <li>
                         <a href="#"><img src="./assets/img/sectors_3.jpg" alt="" />
                             <h3>residence</h3>
                         </a>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="section--service">
                 <div class="section--service-inner_wrap">
-                    <div class="image_wrap">
+                    <div class="image_wrap animate" data-animate="motion">
                         <img src="./assets/img/service.jpg" alt="" />
                     </div>
-                    <dis class="text_wrap">
-                        <h2 class="title">services</h2>
+                    <dis class="text_wrap animate" data-animate="motion" data-splitting>
+                        <h2 class="title animate" data-animate="motion">services</h2>
                         <p>Crew à la Mode specialise in all<br>
                             your needs, from to storage<br>
                             solutions to graphic design,<br>
@@ -123,7 +126,7 @@
             <section class="section--journal">
                 <div class="section--journal-inner_wrap">
                     <h2>journal</h2>
-                    <ul class="list">
+                    <ul class="list animate" data-animate="motion">
                         <li><a href="#">
                             <p class="image_wrap"><img src="./assets/img/journal_1.jpg" alt="" /></p>
                             <h3>cocktails</h3>

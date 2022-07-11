@@ -1,0 +1,107 @@
+/* section--sectors */
+
+section.section--sectors .list.animate__motion li {
+  animation-name: sectors;
+  animation-duration: 1s;
+}
+
+section.section--sectors .list.animate__motion li:nth-child(2) {
+  animation-duration: 1.15s;
+}
+
+section.section--sectors .list.animate__motion li:nth-child(3) {
+  animation-duration: 1.3s;
+}
+
+@keyframes sectors {
+  0% {
+    opacity: 0;
+    transform: translateX(100rem);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(100rem);
+  }
+}
+
+/* section--service */
+
+section.section--service .image_wrap.animate__motion {
+  animation-name: service;
+  animation-duration: 1s;
+}
+
+@keyframes service {
+  0% {
+    opacity: 0;
+    transform: translateX(-100rem);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(-100rem);
+  }
+}
+
+/* section--journal */
+
+section.section--journal .list.animate__motion li {
+  animation-name: journal;
+  animation-duration: 0.5s;
+}
+
+section.section--journal .list.animate__motion li:nth-child(2) {
+  animation-duration: 0.6s;
+}
+
+section.section--journal .list.animate__motion li:nth-child(3) {
+  animation-duration: 0.7s;
+}
+
+section.section--journal .list.animate__motion li:nth-child(4) {
+  animation-duration: 0.8s;
+}
+
+@keyframes journal {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+}
+
+/* text animation */
+
+section.section--visual .title.animate__motion .char {
+  animation: text-animation 2s both;
+  animation-delay: calc(0.08s * var(--char-index));
+}
+
+.text_wrap.animate__motion .word {
+  animation: text-animation 2s both;
+  animation-delay: calc(0.02s * var(--word-index));
+}
+
+.text_wrap.animate__motion a {
+  animation: border-animation 1s both;
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: transparent;
+  }
+  60% {
+    border-color: transparent;
+  }
+}
