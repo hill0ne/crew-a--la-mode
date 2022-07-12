@@ -2,6 +2,11 @@ const aTag = document.querySelectorAll("a");
 const textFixed = document.querySelector(".textwrap-fixed");
 const header = document.querySelector(".header_wrap");
 const list = document.querySelector(".list");
+
+const gnbButton = document.querySelector(".gnb-button");
+const nav = document.querySelector(".nav");
+const contents = document.querySelector(".section_wrap");
+
 let scroll = 0;
 
 //  a 요소 기본 이벤트 제거
@@ -60,12 +65,23 @@ function showImageText() {
           li[3].firstElementChild.classList.add("on");
           if (scroll > 2900) {
             li[3].firstElementChild.classList.remove("on");
+            console.log(gnbMenu);
           }
         }
       }
     }
   }
 }
+
+// gnb menu
+
+gnbButton.addEventListener("click", () => {
+  nav.classList.add("on");
+});
+
+contents.addEventListener("click", () => {
+  nav.classList.remove("on");
+});
 
 // jquery version
 

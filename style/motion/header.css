@@ -13,3 +13,20 @@
   font-size: 2.2rem;
   transition: all 0.5s;
 }
+
+/* header is-active 상태일 때 gnb 디자인 */
+.header_wrap.is-active nav.nav {
+  width: 30rem;
+  transition: all 0.4s;
+}
+
+.header_wrap.is-active nav.nav ul {
+  width: 50%;
+}
+
+/* gnb menu 의 on 상태 디자인 */
+
+nav.nav.on {
+  width: 40rem;
+  left: 0;
+}
