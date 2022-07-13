@@ -1,10 +1,13 @@
+main {
+  z-index: 2;
+}
+
 .section_wrap {
   display: inline-block;
   position: relative;
   width: 100%;
   margin-bottom: 20rem;
   background: var(--main-color-white);
-  z-index: 5;
 }
 
 .section_wrap .section--visual {
@@ -34,6 +37,7 @@
   font-family: var(--font-family-montserrat);
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
 }
 
 /* section--about */

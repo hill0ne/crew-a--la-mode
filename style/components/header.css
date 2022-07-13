@@ -7,7 +7,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   background: #213135;
   padding: 4rem 0 1.5rem;
   color: var(--main-color-white);
@@ -38,6 +38,7 @@ header .header-inner_wrap .gnb-button {
   height: 1.2rem;
   margin-top: 15px;
   transition: all 0.5s;
+  z-index: 200;
 }
 
 header .header-inner_wrap .gnb-button span {
