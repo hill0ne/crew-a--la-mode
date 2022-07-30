@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0;" />
-    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/animation.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
     <script src="./js/library/jquery-3.6.0.js" defer></script>
     <script src="./js/library/jquery.scrolla.min.js" defer></script>
     <script src="./js/library/splitting.min.js" defer></script>
@@ -14,37 +18,35 @@
 </head>
 <body>
     <!-- header -->
-    <header>
-            <div class="header_wrap" role="application"> 
-                <div class="header-inner_wrap">
-                    <a href="" class="gnb-button" role="menubar">
-                        <span class="a" role="menuitem"></span>
-                        <span class="b" role="menuitem"></span>
+    <div class="header_wrap"> 
+                <header class="header">
+                    <a class="gnb_button" role="menu">
+                        <span class="a"></span>
+                        <span class="b"></span>
                     </a>
                     <a href="" class="logo">Crew a la mode</a>
                     <a href="" class="contact">contact</a>
-                </div>
                 <nav class="nav">
-                <ul class="gnb-menu" role="menubar">
+                <ul class="gnb_menu" role="menu" aria-expanded="false">
                     <li><a href="" role="menuitem">CREW <span>Made</span></a></li>
                     <li><a href="" role="menuitem">CREW <span>Ready</span></a></li>
                     <li><a href="" role="menuitem">CREW <span>Design</span></a></li>
                     <li><a href="" role="menuitem">CREW <span>Source</span></a></li>
                 </ul>
                 </nav>
-            </div>
         </header>
+    </div>
     <!-- content -->
     <main>
         <div class="section_wrap">
-            <section class="section--visual">
+            <section class="section_visual">
                 <video class="waves" autoplay muted loop playsinline>
                     <source src="./assets/img/waves.mp4"/>
                 </video>
-                <h2 class="title animate" data-animate="motion" data-splitting>Crew a la mode</h2>
+                <h1 class="title animate" data-animate="motion" data-splitting>Crew a la mode</h1>
             </section>
-            <section class="section--about">
-                <div class="section-about-inner_wrap">
+            <section class="section_about">
+                <div class="section_about_inner_wrap">
                     <div class="text_wrap animate" data-animate="motion" data-splitting>
                         <h2 class="title">about us</h2>
                         <p>The apparel & lifestyle agency. <br>
@@ -54,27 +56,27 @@
                     </div>
                 </div>
             </section>
-            <section class="section--approach">
-                <div class="section-approach-inner_wrap">
+            <section class="section_approach">
+                <div class="section_approach_inner_wrap">
                     <ul class="list">
-                        <li><a href=""><img src="./assets/img/approach_1.jpg" alt="" />
+                        <li><a href="#"><img src="./assets/img/approach_1.jpg" alt="Crew Made" />
                             <span><b>CREW</b> Made</span>
                             </a>
                         </li>
-                        <li><a href=""><img src="./assets/img/approach_2.jpg" alt="" />
+                        <li><a href="#"><img src="./assets/img/approach_2.jpg" alt="Crew Ready" />
                             <span><b>CREW</b> Ready</span>
                             </a>
                         </li>
-                        <li><a href=""><img src="./assets/img/approach_3.jpg" alt="" />
+                        <li><a href="#"><img src="./assets/img/approach_3.jpg" alt="Crew Design" />
                             <span><b>CREW</b> Design</span>
                             </a>
                         </li>
-                        <li><a href=""><img src="./assets/img/approach_4.jpg" alt="" />
+                        <li><a href="#"><img src="./assets/img/approach_4.jpg" alt="Crew Source" />
                             <span><b>CREW</b> Source</span>
                             </a>
                         </li>
                     </ul>
-                    <div class="textwrap-fixed">
+                    <div class="textwrap_fixed">
                         <div class="text_wrap animate" data-animate="motion" data-splitting>
                             <h2 class="title">about us</h2>
                             <p>Considered essentials, limitless luxury we<br>
@@ -86,8 +88,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section--sectors">
-                <div class="section--sectors-inner_wrap">
+            <section class="section_sectors">
+                <div class="section_sectors_inner_wrap">
                     <div class="text_wrap animate" data-animate="motion" data-splitting>
                         <h2 class="title">sectors</h2>
                         <p>Luxury crew apparel curated across oceans,<br>
@@ -113,12 +115,12 @@
                     </ul>
                 </div>
             </section>
-            <section class="section--service">
-                <div class="section--service-inner_wrap">
+            <section class="section_service">
+                <div class="section_service_inner_wrap">
                     <div class="image_wrap animate" data-animate="motion">
                         <img src="./assets/img/service.jpg" alt="" />
                     </div>
-                    <dis class="text_wrap animate" data-animate="motion" data-splitting>
+                    <div class="text_wrap animate" data-animate="motion" data-splitting>
                         <h2 class="title animate" data-animate="motion">services</h2>
                         <p>Crew à la Mode specialise in all<br>
                             your needs, from to storage<br>
@@ -126,15 +128,15 @@
                             brand sourcing, customisation<br>
                             and much more.</p>
                             <a href="#" role="button">explore</a>
-                    </dis>
+                    </div>
                 </div>
             </section>
-            <section class="section--journal">
-                <div class="section--journal-inner_wrap">
+            <section class="section_journal">
+                <div class="section_journal_inner_wrap">
                     <h2>journal</h2>
                     <ul class="list animate" data-animate="motion">
                         <li><a href="#">
-                            <p class="image_wrap"><img src="./assets/img/journal_1.jpg" alt="" /></p>
+                            <p class="image_wrap"><img src="./assets/img/journal_1.jpg" alt="cocktails" /></p>
                             <h3>cocktails</h3>
                             <p>New Year’s Eve is all about
                             celebrating in style.With
@@ -143,7 +145,7 @@
                             </a>
                         </li>
                         <li><a href="#">
-                            <p class="image_wrap"><img src="./assets/img/journal_2.jpg" alt="" /></p>
+                            <p class="image_wrap"><img src="./assets/img/journal_2.jpg" alt="eco coffee" /></p>
                             <h3>eco coffee</h3>
                             <p>Some small brands that are
                                 worth the switch to enjoy a
@@ -152,7 +154,7 @@
                             </a>
                         </li>
                         <li><a href="#">
-                            <p class="image_wrap"><img src="./assets/img/journal_3.jpg" alt="" /></p>
+                            <p class="image_wrap"><img src="./assets/img/journal_3.jpg" alt="arboretum" /></p>
                             <h3>arboretum</h3>
                             <p>London is seeing a new
                                 genre of private independent member’s
@@ -160,7 +162,7 @@
                             </a>
                         </li>
                         <li><a href="#">
-                            <p class="image_wrap"><img src="./assets/img/journal_4.jpg" alt="" /></p>
+                            <p class="image_wrap"><img src="./assets/img/journal_4.jpg" alt="protected" /></p>
                             <h3>protected species</h3>
                             <p>Iconic British design with
                                 contemporary rainwear technology
@@ -174,8 +176,8 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-        <div class="footer--inner_wrap">
-            <h1 class="footer-logo" role="banner">à</h1>
+        <div class="footer_inner_wrap">
+            <h1 class="footer_logo">à</h1>
             <address>
                 <div class="address_wrap">
                     <span>Carrer del Jardi Botànic 4, Palma De Mallorca, 07012</span>

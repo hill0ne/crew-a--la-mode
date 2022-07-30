@@ -1,0 +1,296 @@
+/* pc : max 1400px */
+
+@media screen and (max-width: 1400px) {
+  div[class*="inner_wrap"] {
+    width: 90%;
+  }
+
+  section.section_sectors .list {
+    width: 90%;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list li {
+    width: 26rem;
+  }
+
+  section.section_journal .section_journal-inner_wrap .list a .image_wrap {
+    height: 26rem;
+  }
+}
+
+/* tablet : 1024px */
+
+@media screen and (max-width: 1024px) {
+  .section_wrap .section_visual .title {
+    font-size: 5rem;
+  }
+  section.section_about .section-_about_inner_wrap .text_wrap p {
+    font-size: 2.8rem;
+  }
+
+  .text_wrap p {
+    font-size: 2.8rem;
+  }
+
+  section.section_approach .section-_approach_inner_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  section.section_approach .section-_approach_inner_wrap .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  section.section_approach .section-_approach_inner_wrap .list li {
+    width: 48.5%;
+    margin-bottom: 2rem;
+  }
+
+  section.section_approach .section-_approach_inner_wrap .list li:last-child {
+    margin-bottom: 2rem;
+  }
+
+  section.section_approach .section-_approach_inner_wrap .textwrap-fixed {
+    position: static;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .section-_approach_inner_wrap .textwrap_fixed .text_wrap {
+    position: static;
+  }
+
+  .section-_approach_inner_wrap .textwrap_fixed .text_wrap.is-active {
+    position: static;
+    transform: none;
+  }
+  .section-_approach_inner_wrap .list li a:after,
+  .section-_approach_inner_wrap .list li a:hover:after {
+    display: none;
+  }
+
+  .section-_approach_inner_wrap .list li a span,
+  .section-_approach_inner_wrap .list li a.on span,
+  .section-_approach_inner_wrap .list li a:hover span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--main-color-white);
+    font-size: 2.5rem;
+    font-style: italic;
+    z-index: 1;
+  }
+
+  .section-_approach_inner_wrap .list li a span b,
+  .section-_approach_inner_wrap .list li a.on span b,
+  .section-_approach_inner_wrap .list li a:hover span b {
+    font-style: normal;
+  }
+
+  section.section_sectors {
+    padding: 10rem 0 20%;
+    margin-bottom: 15%;
+  }
+
+  section.section_sectors .list {
+    bottom: -18%;
+  }
+
+  section.section_journal {
+    padding: 25% 0 10rem;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list li {
+    width: 21rem;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list a .image_wrap {
+    height: 21rem;
+  }
+
+  .footer {
+    height: 33rem;
+  }
+
+  .footer-_inner_wrap {
+    flex-wrap: wrap;
+  }
+
+  .footer-_inner_wrap .footer_logo {
+    width: 100%;
+  }
+
+  .section_wrap {
+    margin-bottom: 33rem;
+  }
+
+  .footer_inner_wrap address {
+    width: 100%;
+  }
+
+  .footer_inner_wrap .sns-list {
+    width: 100%;
+    margin: 4rem 0;
+    justify-content: space-between;
+  }
+
+  .footer_inner_wrap .sns-list li {
+    margin: 0;
+  }
+}
+
+/* mobile : 768px */
+
+@media screen and (max-width: 768px) {
+  section.section_service .section_service_inner_wrap .image_wrap,
+  section.section_service .section_service_inner_wrap .text_wrap {
+    width: 100%;
+  }
+
+  section.section_service .section_service_inner_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  section.section_service .section_service_inner_wrap .text_wrap {
+    margin-bottom: 5rem;
+  }
+
+  section.section_journal {
+    margin-top: -25%;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list {
+    flex-wrap: wrap;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list li {
+    width: 48.5%;
+    margin-bottom: 2rem;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list li .image_wrap {
+    height: auto;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list li .image_wrap img {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+}
+
+/* mobile : 500px */
+
+@media screen and (max-width: 500px) {
+  .header_wrap {
+    padding: 2rem 0 1.8rem;
+  }
+
+  .header_wrap .header_inner_wrap .gnb-button,
+  .header_wrap.is-active .header_inner_wrap .gnb-button {
+    width: 2.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .header_wrap .header_inner_wrap .logo,
+  .header_wrap.is-active .header_inner_wrap .logo {
+    font-size: 1.8rem;
+  }
+
+  .header_wrap .header_inner_wrap .contact {
+    display: none;
+  }
+
+  nav.nav.on,
+  .header_wrap.is-active nav.nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav.nav .gnb-menu,
+  .header_wrap.is-active nav.nav .gnb-menu {
+    width: 50%;
+  }
+
+  .section_wrap .section_visual .title {
+    font-size: 3rem;
+  }
+
+  section.section_about .section-_about_inner_wrap .text_wrap p,
+  .text_wrap p {
+    font-size: 2.2rem;
+  }
+
+  section.section_about,
+  section.section_approach {
+    padding: 8rem 0;
+  }
+
+  section.section_approach .section-_approach_inner_wrap .list li {
+    width: 100%;
+  }
+  section.section_sectors {
+    padding: 8rem 0 85%;
+    margin-bottom: 120%;
+  }
+
+  section.section_sectors .list {
+    flex-wrap: wrap;
+    bottom: -82%;
+  }
+
+  section.section_sectors .list li {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  section.section_service {
+    padding: 8rem 0;
+  }
+
+  section.section_journal {
+    padding: 30% 0 8rem;
+  }
+
+  section.section_journal .section_journal_inner_wrap h2 {
+    font-size: 2.5rem;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list li {
+    width: 100%;
+  }
+
+  section.section_journal .section_journal_inner_wrap .list li:nth-child(3),
+  section.section_journal .section_journal_inner_wrap .list li:nth-child(4) {
+    display: none;
+  }
+
+  .footer {
+    height: 28rem;
+    padding: 5.5rem 0;
+  }
+
+  .footer .footer-_inner_wrap .footer-logo {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .footer .footer-_inner_wrap .sns-list {
+    font-size: 1.3rem;
+  }
+
+  .section_wrap {
+    margin-bottom: 28rem;
+  }
+}

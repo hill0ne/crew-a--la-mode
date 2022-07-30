@@ -1,15 +1,14 @@
-/* section--sectors */
-
-section.section--sectors .list.animate__motion li {
+/* section_sectors */
+section.section_sectors .list.animate__motion li {
   animation-name: sectors;
   animation-duration: 1s;
 }
 
-section.section--sectors .list.animate__motion li:nth-child(2) {
+section.section_sectors .list.animate__motion li:nth-child(2) {
   animation-duration: 1.15s;
 }
 
-section.section--sectors .list.animate__motion li:nth-child(3) {
+section.section_sectors .list.animate__motion li:nth-child(3) {
   animation-duration: 1.3s;
 }
 
@@ -24,9 +23,8 @@ section.section--sectors .list.animate__motion li:nth-child(3) {
   }
 }
 
-/* section--service */
-
-section.section--service .image_wrap.animate__motion {
+/* section_service */
+section.section_service .image_wrap.animate__motion {
   animation-name: service;
   animation-duration: 1s;
 }
@@ -42,22 +40,21 @@ section.section--service .image_wrap.animate__motion {
   }
 }
 
-/* section--journal */
-
-section.section--journal .list.animate__motion li {
+/* section_journal */
+section.section_journal .list.animate__motion li {
   animation-name: journal;
   animation-duration: 0.5s;
 }
 
-section.section--journal .list.animate__motion li:nth-child(2) {
+section.section_journal .list.animate__motion li:nth-child(2) {
   animation-duration: 0.6s;
 }
 
-section.section--journal .list.animate__motion li:nth-child(3) {
+section.section_journal .list.animate__motion li:nth-child(3) {
   animation-duration: 0.7s;
 }
 
-section.section--journal .list.animate__motion li:nth-child(4) {
+section.section_journal .list.animate__motion li:nth-child(4) {
   animation-duration: 0.8s;
 }
 
@@ -73,19 +70,19 @@ section.section--journal .list.animate__motion li:nth-child(4) {
 }
 
 /* text animation */
-
-section.section--visual .title.animate__motion .char {
+section.section_visual .title.animate__motion .char {
   animation: text-animation 2s both;
   animation-delay: calc(0.08s * var(--char-index));
 }
 
 .text_wrap.animate__motion .word {
-  animation: text-animation 2s both;
+  animation: text-animation 1s both;
   animation-delay: calc(0.02s * var(--word-index));
 }
 
 .text_wrap.animate__motion a {
   animation: border-animation 1s both;
+  background: transparent;
 }
 
 @keyframes text-animation {

@@ -105,15 +105,3 @@ em,
 i {
   font-style: normal;
 }
-
-html {
-  width: 100vw;
-  height: 100vh;
-}
-
-body {
-  width: 100%;
-  font-family: var(--font-family-myeongjo);
-  color: var(--main-color-black);
-  overflow-x: hidden;
-}
