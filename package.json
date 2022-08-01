@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --port=3000"
+    "start": "live-server --port=3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,5 @@
   "bugs": {
     "url": "https://github.com/hill0ne/crew-a-la-mode/issues"
   },
-  "homepage": "https://github.com/hill0ne/crew-a-la-mode#readme"
+  "homepage": "https://github.com/hill0ne/crew-a-la-mode"
 }
