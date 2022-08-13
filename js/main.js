@@ -1,5 +1,5 @@
 const aTag = document.querySelectorAll("a");
-const textFixed = document.querySelector(".textwrap_fixed");
+const about_text = document.querySelector(".about_text");
 const header = document.querySelector(".header_wrap");
 const list = document.querySelector(".list");
 
@@ -10,35 +10,26 @@ const contents = document.querySelector(".section_wrap");
 let scroll = 0;
 let status = false;
 
-//  a 요소 기본 이벤트 제거
-for (a of aTag) {
-  a.addEventListener("click", (e) => {
-    e.preventDefault();
-  });
-}
+window.addEventListener("scroll", () => {
+  scroll = document.documentElement.scrollTop;
+  fixAboutText();
+  fixHeaderPosition();
+  showTextWidthImage();
+});
 
-if (document.readyState) {
-  window.addEventListener("scroll", () => {
-    scroll = document.documentElement.scrollTop;
-    fixTextPosition();
-    fixHeaderPosition();
-    showTextWidthImage();
-  });
-}
-
-// 스크롤과 결합된 텍스트 애니메이션
-
-function fixTextPosition() {
+// about us 영역 텍스트 고정 함수
+function fixAboutText() {
   if (scroll > 1250) {
-    textFixed.firstElementChild.classList.add("is-active");
+    about_text.firstElementChild.classList.add("is-active");
     if (scroll > 2700) {
-      textFixed.firstElementChild.classList.remove("is-active");
+      about_text.firstElementChild.classList.remove("is-active");
     }
   } else {
-    textFixed.firstElementChild.classList.remove("is-active");
+    about_text.firstElementChild.classList.remove("is-active");
   }
 }
 
+// 스크롤 시 header 영역 작아지는 함수
 function fixHeaderPosition() {
   if (scroll > 80) {
     header.classList.add("is-active");
@@ -47,6 +38,9 @@ function fixHeaderPosition() {
   }
 }
 
+// approach 영역 리스트의 텍스트 애니메이션 함수
+// li의 하위요소인 a 요소에 접근하기 위해 for 문 사용
+// a 요소를 배열에 넣어 인덱스로 조작
 function showTextWidthImage() {
   const li = list.children;
   let arr = [];
@@ -54,7 +48,6 @@ function showTextWidthImage() {
 
   for (let i = 0; i < li.length; i++) {
     let a = li[i].firstElementChild;
-    // 배열 a
     arr.push(a);
     arr[i].classList.remove("on");
   }
@@ -79,7 +72,7 @@ function showTextWidthImage() {
   }
 }
 
-// gnb menu 버튼 동작
+// gnb 버튼 동작
 gnbButton.addEventListener("click", () => {
   if (!status) {
     nav.classList.add("on");
@@ -90,6 +83,7 @@ gnbButton.addEventListener("click", () => {
   }
 });
 
+// gnb 가 아닌 다른 영역 클릭 시 gnb 닫히는 함수
 contents.addEventListener("click", () => {
   nav.classList.remove("on");
 });

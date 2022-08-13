@@ -200,7 +200,7 @@ section.section_approach .section_approach_inner_wrap {
   font-family: var(--font-family-montserrat);
 }
 
-section.section_approach .section_approach_inner_wrap .textwrap_fixed {
+section.section_approach .section_approach_inner_wrap .about_text {
   position: absolute;
   width: 45%;
   height: 100%;
@@ -208,7 +208,7 @@ section.section_approach .section_approach_inner_wrap .textwrap_fixed {
   right: 0;
 }
 
-.section_approach_inner_wrap .textwrap_fixed .text_wrap {
+.section_approach_inner_wrap .about_text .text_wrap {
   position: absolute;
   bottom: 10%;
 }
@@ -419,8 +419,7 @@ section.section_journal .section_journal_inner_wrap .list a p {
   text-transform: uppercase;
 }
 
-/* motion design */
-/* header motion */
+/* header 애니메이션 */
 .header_wrap.is-active {
   padding: 2rem 0 1.8rem;
   transition: all 0.5s;
@@ -437,8 +436,8 @@ section.section_journal .section_journal_inner_wrap .list a p {
   transition: all 0.5s;
 }
 
-/* main motion */
-.section_approach_inner_wrap .textwrap_fixed .text_wrap.is-active {
+/* main 애니메이션 */
+.section_approach_inner_wrap .about_text .text_wrap.is-active {
   position: fixed;
   bottom: 50%;
   transform: translateY(50%);
