@@ -1,34 +1,118 @@
 ### **📍 프로젝트 소개**
 
-코오롱 스포츠의 모바일 웹 페이지를 참고하여 구현한 반응형 웹 페이지입니다.
-
-[statcounter](https://gs.statcounter.com/screen-resolution-stats/tablet/worldwide) 통계를 기준으로 320px ~ 767px 모바일 해상도와
-768 px ~1023px 태블릿 해상도를 분기점으로 잡고 구현하였습니다. 
+Crew a la mode 웹 페이지를 모바일, 태블릿, 데스크탑 반응형으로 구현한 클론코딩 프로젝트입니다.
 
 ### **🚀 프로젝트 목표**
 
-- 모바일과 태블릿 디바이스에서 부드럽게 반응형으로 구현하기
-- swiper.js 커스터마이징 익히기
+- 다양한 jQuery 라이브러리 사용해보기 (✔️완료)
+- 기존 페이지에서 WAI-ARIA 접근성 보완하기 (👣진행중)
 
 ### **🔩 사용 기술**
 
-- HTML - 웹 표준을 준수한 시맨틱 마크업
-- CSS
-- jQuery - Swiper.js 라이브러리
+- HTML - 웹 표준을 준수한 시맨틱 마크업 , WAI-ARIA
+- CSS - 사용자 지정 변수
+- JavaScript
 
-### ❇️ Advanced Feature
+### ❇️ **Advanced Feature**
 
-- 320px ㅡ 767px 모바일 해상도에서는 슬라이드 시퀀스가 2개씩 보이고, 767px 이상 태블릿 해상도에서는 슬라이드 시퀀스가 4개씩 보이도록 구현하였습니다.
-- 버튼으로 footer 의 사업자정보 영역을 펼침/접힘 할 수 있도록 구현하였습니다.
-![image](https://user-images.githubusercontent.com/86298249/184577278-026ccd54-1039-436d-9711-3c6c31a89860.png)
+- 스크롤 이벤트와 window API - ScrollTop 을 이용하여 클래스에 따라 이미지와 텍스트에 애니메이션 효과를 주도록 구현하였습니다.
+- 일부 영역에서만 텍스트가 고정되는 효과를 구현하였습니다.
 
+```jsx
+// about us 영역 텍스트 고정 함수
+function fixAboutText() {
+  if (scroll > 1250) {
+    about_text.firstElementChild.classList.add("is-active");
+    if (scroll > 2700) {
+      about_text.firstElementChild.classList.remove("is-active");
+    }
+  } else {
+    about_text.firstElementChild.classList.remove("is-active");
+  }
+}
+```
+
+```css
+.section_approach_inner_wrap .about_text .text_wrap.is-active {
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+```
+
+- 이미지에 마우스 hover 시 색상 변화와 텍스트가 나타나는 효과와 스크롤을 내릴 때 해당 이미지 영역에서 자동으로 색상 변화와 텍스트가 나타나는 효과를 구현하였습니다.
+
+```jsx
+// approach 영역 리스트의 텍스트 애니메이션 함수
+// li의 하위요소인 a 요소에 접근하기 위해 for 문 사용
+// a 요소를 배열에 넣어 인덱스로 조작
+function showTextWidthImage() {
+  const li = list.children;
+  let arr = [];
+  let span = [];
+
+  for (let i = 0; i < li.length; i++) {
+    let a = li[i].firstElementChild;
+    arr.push(a);
+    arr[i].classList.remove("on");
+  }
+
+  if (scroll > 1250) {
+    arr[0].classList.add("on");
+  }
+  if (scroll > 1650) {
+    arr[0].classList.remove("on");
+    arr[1].classList.add("on");
+  }
+  if (scroll > 2050) {
+    arr[1].classList.remove("on");
+    arr[2].classList.add("on");
+  }
+  if (scroll > 2550) {
+    arr[2].classList.remove("on");
+    arr[3].classList.add("on");
+  }
+  if (scroll > 2900) {
+    arr[3].classList.remove("on");
+  }
+}
+```
+
+```css
+.section_approach_inner_wrap .list li a.on::after,
+.section_approach_inner_wrap .list li a:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.3);
+}
+
+/* 이미지 hover 시 텍스트가 나타나는 효과 */
+.section_approach_inner_wrap .list a.on span,
+.section_approach_inner_wrap .list li a:hover span {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--main-color-white);
+  font-size: 3.5rem;
+  font-style: italic;
+  z-index: 1;
+}
+```
 
 ### **💬 이슈 & 개선사항**
 
-- 디자인 시안이 없다보니 모바일 버전에서의 폰트 사이즈를 가늠하기 어려워 초반에 폰트를 너무 크게 잡게 됐습니다. 이 후 다양한 모바일 웹 페이지의 화면과 대조하면서 모바일 폰트 사이즈는 평균 1.2rem ~ 2rem 정도로 기준을 잡고 다시 코드를 작성했습니다.
-- main_type5 의 배경이미지 컬러와 header 아이콘 컬러가 비슷해서 header 아이콘이 잘 보이지 않으므로 main_type5 진입 시 아이콘의 컬러를 변경해주는 함수를 구현중에 있습니다.
+- Desktop 에서 해상도가 낮아지는 기준으로 미디어쿼리를 작성하였는데 모바일 반응형 분기점을 max-width : 500으로 잡다보니 500px 이하에서는 레이아웃이  현상이 있습니다. 현재 분기점을 다시 잡고 스타일을 수정하는 작업중에 있습니다.
+- 스크롤 영역에 따라 애니메이션을 구현하는 부분의 함수와 변수가 조금 복잡한 것 같아 이 후 가독성이 높으면서 간략한 코드로 리팩토링 하려고 합니다.
 
 ### 💡 느낀점
 
-- 미디어쿼리 min-width 와 max-width 를 잡는 것이 헷갈려서 2번 정도를 새로 엎고 다시 코드를 작성했습니다. 커뮤니티 카페와 스탯카운터 통계를 참고하여 분기점을 어떤 기준으로 잡을지 조금씩 감을 익혔습니다.
-- 슬라이드 시퀀시 간의 간격을 CSS로 제어하려고 했는데 작동이 잘 되지 않아 라이브러리 문서를 보니 옵션에 spaceBetween 속성으로 제어할 수 있었습니다.  커스터마이징을 잘 하지 못했었는데 공식 문서에 있는 옵션들을 찾아보면서 구현하는 동안 라이브러리 사용에 조금 익숙해질 수 있었습니다.
+- 라이브러리를 한 번도 사용해보지 않은 상태였고, 다양하게 라이브러리를 사용해보고 싶어 시작한 프로젝트였습니다. 초반에는 jQuery 설치부터 버벅거렸는데 이제는 다른 프로젝트에서도 라이브러리를 적용할 수 있을 만큼 익숙해졌습니다.
+- 반응형 분기점 잡기가 어려웠습니다. 모든 디바이스에 레이아웃을 완벽하게 충족시킬 수 없지만, 최대한 비슷한 레이아웃을 잡기 위한 노력이 필요함을 느꼈습니다.
