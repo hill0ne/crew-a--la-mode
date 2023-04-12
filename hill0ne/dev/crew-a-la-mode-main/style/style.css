@@ -1,0 +1,72 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  font-family: var(--font-family-myeongjo);
+  color: var(--main-color-black);
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+}
+
+:root {
+  --main-color-black: #333;
+  --main-color-white: #fff;
+  --main-color-navy: #213135;
+  --main-color-background: #f2f0eb;
+  --font-family-myeongjo: "Nanum Myeongjo", serif;
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-georgian: "Noto Serif Georgian", sans-serif;
+  font-size: 10px;
+}
+
+main {
+  width: 100%;
+}
+
+div[class*="inner_wrap"] {
+  width: 140rem;
+  margin: 0 auto;
+}
+
+.text_wrap .title {
+  font-size: 2rem;
+  font-family: var(--font-family-montserrat);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.text_wrap p {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 4rem 0;
+}
+
+.text_wrap a {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: var(--font-family-montserrat);
+  letter-spacing: 1px;
+  border: 1px solid var(--main-color-black);
+  border-radius: 20px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.text_wrap a:hover,
+.text_wrap a:focus {
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--main-color-black);
+  border-radius: 0;
+  padding: 0.5rem 1.8rem;
+  transition: all 0.2s;
+  background: var(--main-color-background);
+}

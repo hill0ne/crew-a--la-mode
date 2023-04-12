@@ -1,0 +1,21 @@
+{
+  "name": "crew-a-la-mode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hill0ne/crew-a-la-mode.git"
+  },
+  "author": "jeanj531@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hill0ne/crew-a-la-mode/issues"
+  },
+  "homepage": "https://github.com/hill0ne/crew-a-la-mode"
+}
